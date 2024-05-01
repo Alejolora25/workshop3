@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+export const Header = () => {
   return (
     <div className="container d-flex flex-row align-items-center justify-content-center bg-primary py-3 mt-2">
       <div className="container-xxl">
@@ -60,5 +60,3 @@ const Header = () => {
     </div>
   )
 }
-
-export default Header
