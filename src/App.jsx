@@ -1,9 +1,9 @@
 import { useState } from 'react'
-
 import './App.css'
 import { Header } from './Components/Header'
 import { Footer } from './Components/Footer'
 import { CardJob } from './Components/CardJob'
+
 const employees = [
   {
     id: "1",
@@ -82,7 +82,18 @@ function App() {
   return (
     <>
       <Header/>
-      <CardJob/>
+      {employees.map((employee) => (
+            <CardJob
+              id = {employee.id}
+              jobTitle={employee.jobTitle}
+              company={employee.company}
+              type={employee.type}
+              salary={employee.salary}
+              vacancies={employee.vacancies}
+              date={employee.date}
+              skills={employee.skills}
+            />
+      ))}
       <Footer/>
     </>
   )
