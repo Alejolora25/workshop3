@@ -72,3 +72,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.bg-primary{
+  background-color: #3a8ced !important;
+}
