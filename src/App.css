@@ -10,3 +10,65 @@
 body{
   background-color: var(--color-f5f5f7);
 }
+
+.footer {
+  background: linear-gradient(90deg, #59a8ea, #1262a7);
+  color: white;
+}
+
+.footer h2 {
+  margin-top: 0;
+}
+
+.footer h6 {
+  color: white;
+}
+
+.footer .list-inline {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.footer .list-inline-item {
+  margin-right: 10px;
+}
+
+.footer p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.wave {
+  position: absolute;
+  top: -1px; 
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.wave svg[data-v-094d61b8] {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 40px;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.bold{
+  font-weight:900;
+}
+
+a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
