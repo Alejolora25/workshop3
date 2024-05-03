@@ -38,12 +38,18 @@ Este proyecto es una aplicación web básica desarrollada con React y Vite. Util
 
 
 2. Navega hasta el directorio del proyecto:
+
+    ```bash
     cd workshop3
 
 3. Instala las dependencias:
+
+    ```bash
     npm install
 
 4. Inicia la aplicación:
+
+    ```bash
     npm run dev
 
 
