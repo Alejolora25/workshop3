@@ -10,9 +10,12 @@ import {
 } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
 import { PiMoneyFill } from "react-icons/pi";
+import BenefitIcon from "./BenefitIcon";
 
 export const CardJob = (props) => {
+
   const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div
       className={`container my-3 card ${isHovered ? "shadow" : ""}`}
@@ -60,10 +63,9 @@ export const CardJob = (props) => {
               <p className="mx-1">{props.date}</p>
             </div>
             <div className="d-flex col-2">
-              <BsEmojiSunglasses className="icon" />
-              <BsFileEarmarkCheck className="icon" />
-              <BsCalendar2Plus className="icon" />
-              <br />
+            {props.benefits.map((benefit, index) => (
+                <BenefitIcon benefit={benefit} key={index} />
+              ))}
             </div>
           </div>
         </div>
@@ -71,3 +73,7 @@ export const CardJob = (props) => {
     </div>
   );
 };
+
+{/* <BsEmojiSunglasses className="icon" />
+<BsFileEarmarkCheck className="icon" />
+<BsCalendar2Plus className="icon" /> */}

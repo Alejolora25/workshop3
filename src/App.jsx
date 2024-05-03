@@ -14,6 +14,7 @@ const employees = [
     salary: "$ 2.8M COP",
     vacancies: "1 Vacante",
     date: "1 days ago",
+    benefits: ['certificaciones', 'Fiesta de fin año', 'capacitaciones'],
   },
   {
     id: "2",
@@ -24,6 +25,7 @@ const employees = [
     salary: "$ 2.8M COP",
     vacancies: "1 Vacante",
     date: "1 days ago",
+    benefits: ['certificaciones', 'Fiesta de fin año', 'capacitaciones'],
   },
   {
     id: "3",
@@ -34,6 +36,7 @@ const employees = [
     salary: "Confidencial",
     vacancies: "1 Vacante",
     date: "1 days ago",
+    benefits: [],
   },
   {
     id: "4",
@@ -44,6 +47,7 @@ const employees = [
     salary: "$ 1.3M COP",
     vacancies: "1 Vacante",
     date: "about  24 hours ago",
+    benefits: ['certificaciones', 'Fiesta de fin año', 'capacitaciones'],
   },
   {
     id: "5",
@@ -54,6 +58,7 @@ const employees = [
     salary: "$ 1.9M COP",
     vacancies: "1 Vacante",
     date: "3 days ago",
+    benefits: [ 'Trabajo remoto parcial',  'certificaciones', 'capacitaciones', ],
   },
   {
     id: "6",
@@ -64,6 +69,7 @@ const employees = [
     salary: "$ 1.4M COP",
     vacancies: "1 Vacante",
     date: "3 days ago",
+    benefits: ['Seguro médico privado', ],
   },
   {
     id: "7",
@@ -74,6 +80,7 @@ const employees = [
     salary: "Confidencial",
     vacancies: "1 Vacante",
     date: "4 days ago",
+    benefits: ['Seguro médico privado', 'Horario Flexible', ],
   },
 ]
 
@@ -92,6 +99,7 @@ function App() {
               vacancies={employee.vacancies}
               date={employee.date}
               skills={employee.skills}
+              benefits={employee.benefits}
             />
       ))}
       <Footer/>
