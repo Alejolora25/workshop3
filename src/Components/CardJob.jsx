@@ -4,9 +4,6 @@ import {
   BsBuildings,
   BsPeople,
   BsCalendar3,
-  BsEmojiSunglasses,
-  BsFileEarmarkCheck,
-  BsCalendar2Plus,
 } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
 import { PiMoneyFill } from "react-icons/pi";
@@ -25,7 +22,7 @@ export const CardJob = (props) => {
       <div className="row d-flex flex-row align-items-center my-auto">
         <div className="col-1">
           <img
-            src="/images/brand-01.png"
+            src={(`images/${props.id}.png`)}
             alt="foto"
             className="img-fluid p-2"
           />

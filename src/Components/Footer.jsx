@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer mx-5">
       <div class="position-relative" data-v-6449542c="">
         <div class="wave top" data-v-094d61b8="" data-v-6449542c="">
           <svg

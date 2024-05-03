@@ -6,7 +6,7 @@ import { CardJob } from './Components/CardJob'
 
 const employees = [
   {
-    id: "1",
+    id: "offimedicas",
     jobTitle: "Tester de Software",
     skills: ['Resolution Capacity', 'Compliance Whit Indicators', 'Agile Work'],
     company: "OFFIMEDICAS S.A",
@@ -17,7 +17,7 @@ const employees = [
     benefits: ['certificaciones', 'Fiesta de fin año', 'capacitaciones'],
   },
   {
-    id: "2",
+    id: "offimedicas",
     jobTitle: "Regente de farmacia Supernumerario",
     skills: ['Attitude To Service', 'Adaptation To Changes', 'Liderazgo'],
     company: "OFFIMEDICAS S.A",
@@ -28,7 +28,7 @@ const employees = [
     benefits: ['certificaciones', 'Fiesta de fin año', 'capacitaciones'],
   },
   {
-    id: "3",
+    id: "genuine-digital-school",
     jobTitle: "Profesor de tecnología",
     skills: ['Attitude', 'Bilingüismo', 'Educación Virtual'],
     company: "Confidencial",
@@ -39,18 +39,18 @@ const employees = [
     benefits: [],
   },
   {
-    id: "4",
+    id: "phidias",
     jobTitle: "Aprendiz Sena Contable",
     skills: ['Accounting Analysis'],
     company: "Phidias",
     type: "Remoto",
     salary: "$ 1.3M COP",
     vacancies: "1 Vacante",
-    date: "about  24 hours ago",
+    date: "2 days ago",
     benefits: ['certificaciones', 'Fiesta de fin año', 'capacitaciones'],
   },
   {
-    id: "5",
+    id: "offimedicas",
     jobTitle: "Regente de farmacia Supernumerario",
     skills: ['Attitude To Service', 'Adaptation To Changes', 'Liderazgo'],
     company: "OFFIMEDICAS S.A",
@@ -61,7 +61,7 @@ const employees = [
     benefits: [ 'Trabajo remoto parcial',  'certificaciones', 'capacitaciones', ],
   },
   {
-    id: "6",
+    id: "offimedicas",
     jobTitle: "Auxiliar de Farmacia",
     skills: ['Attitude To Service', 'Fingering', 'Agilism'],
     company: "OFFIMEDICAS S.A",
@@ -72,7 +72,7 @@ const employees = [
     benefits: ['Seguro médico privado', ],
   },
   {
-    id: "7",
+    id: "genuine-digital-school",
     jobTitle: "Profesor de tecnología",
     skills: ['Attitude', 'Bilingüismo', 'Educación Virtual'],
     company: "Genuine Digital School",
