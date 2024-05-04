@@ -5,16 +5,16 @@
     border: 1px solid black;
     padding: 3px;
     border-radius: 12px;
-    font-size: 10px;
+    font-size: 0.8em;
 }
 .data p {
-    font-size: 11px;
+    font-size: 0.9em;
 }
 .icon {
     border: 1px solid black;
     padding: 2px 4px 2px 4px;
-    margin: 2px;
-    border-radius: 8px;
-    width: 25px;
-    height: 15px;
+    margin: 2px 2px 15px 2px;
+    border-radius: 10px;
+    width: 33px;
+    height: 23px;
 }

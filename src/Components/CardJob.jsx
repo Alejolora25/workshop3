@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import "../Styles/CardJob.css";
-import {
-  BsBuildings,
-  BsPeople,
-  BsCalendar3,
-} from "react-icons/bs";
+import { BsBuildings, BsPeople, BsCalendar3 } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
 import { PiMoneyFill } from "react-icons/pi";
 import BenefitIcon from "./BenefitIcon";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export const CardJob = (props) => {
-
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -22,14 +18,14 @@ export const CardJob = (props) => {
       <div className="row d-flex flex-row align-items-center my-auto">
         <div className="col-1">
           <img
-            src={(`images/${props.id}.png`)}
+            src={`images/${props.id}.png`}
             alt="foto"
             className="img-fluid p-2"
           />
         </div>
         <div className="col">
           <div className="d-flex job-title mt-2">
-            <h6 className="me-3">{props.jobTitle}</h6>
+            <h2 className="me-3">{props.jobTitle}</h2>
             <p>
               {props.skills.map((skill, index) => (
                 <span className="skill ms-1" key={index}>
@@ -60,8 +56,16 @@ export const CardJob = (props) => {
               <p className="mx-1">{props.date}</p>
             </div>
             <div className="d-flex col-2">
-            {props.benefits.map((benefit, index) => (
-                <BenefitIcon benefit={benefit} key={index} />
+              {props.benefits.map((benefit, index) => (
+                <OverlayTrigger
+                  key={index}
+                  placement="top"
+                  overlay={<Tooltip id={`tooltip-${index}`}>{benefit}</Tooltip>}
+                >
+                  <span className="d-inline-block">
+                    <BenefitIcon benefit={benefit} />
+                  </span>
+                </OverlayTrigger>
               ))}
             </div>
           </div>
@@ -71,6 +75,8 @@ export const CardJob = (props) => {
   );
 };
 
-{/* <BsEmojiSunglasses className="icon" />
+{
+  /* <BsEmojiSunglasses className="icon" />
 <BsFileEarmarkCheck className="icon" />
-<BsCalendar2Plus className="icon" /> */}
+<BsCalendar2Plus className="icon" /> */
+}
